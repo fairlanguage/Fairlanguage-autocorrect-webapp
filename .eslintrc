@@ -1,0 +1,35 @@
+{
+  "env": {
+    "browser": true
+  },
+  "rules": {
+    "indent": [
+      2,
+      2,
+      {
+        "SwitchCase": 1
+      }
+    ],
+    "no-extra-semi": 2,
+    "no-param-reassign": [
+      2,
+      {
+        "props": false
+      }
+    ],
+    "quotes": 2,
+    "no-multiple-empty-lines": [
+      "error",
+      {
+        "max": 1
+      }
+    ],
+    "lines-between-class-members": [
+      "error",
+      "always",
+      {
+        "exceptAfterSingleLine": true
+      }
+    ]
+  }
+}
