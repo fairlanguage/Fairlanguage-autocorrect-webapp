@@ -6,18 +6,110 @@
     <title>Fairlanguage Webapp</title>
     <link media="all" rel="stylesheet" href="css/bulma.css" />
     <link media="all" rel="stylesheet" href="css/custom.css" />
+    <!-- Chatra {literal} -->
+    <script>
+    (function(d, w, c) {
+        w.ChatraID = 'E6zS9zLLZXB2FGzo7';
+        var s = d.createElement('script');
+        w[c] = w[c] || function() {
+            (w[c].q = w[c].q || []).push(arguments);
+        };
+        s.async = true;
+        s.src = 'https://call.chatra.io/chatra.js';
+        if (d.head) d.head.appendChild(s);
+    })(document, window, 'Chatra');
+    </script>
+<!-- /Chatra {/literal} -->
+
   </head>
+
   <body>
+
+  <nav class="navbar" role="navigation" aria-label="main navigation">
+  <div class="navbar-brand">
+    <a class="navbar-item" href="https://fairlanguage.com">
+      <img src="src/logo_transparent_standard_megaretina.png" width="60" height="100">
+    </a>
+
+    <a role="button" class="navbar-burger burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
+      <span aria-hidden="true"></span>
+      <span aria-hidden="true"></span>
+      <span aria-hidden="true"></span>
+    </a>
+  </div>
+
+  <div id="navbarBasicExample" class="navbar-menu">
+    <div class="navbar-start">
+      <a class="navbar-item">
+        Mehr über Fairlanguage erfahren
+      </a>
+      
+      <a class="navbar-item">
+            Beratung
+      </a>
+
+          <div class="navbar-item has-dropdown is-hoverable">
+            <a class="navbar-link">
+              Digitale Lösungen
+            </a>
+
+              <div class="navbar-dropdown">
+                <a class="navbar-item">
+                  Webanwendung
+                </a>
+                <a class="navbar-item">
+                  Browser Extensions / Add-ons
+                </a>
+                <a class="navbar-item">
+                  Office / Word Add-ins
+                </a>
+                <hr class="navbar-divider">
+                <a class="navbar-item">
+                  Report an issue
+                </a>
+              </div>
+          </div>
+    </div>
+
+    <div class="navbar-end">
+      <div class="navbar-item">
+        <div class="buttons">
+          <a class="button is-primary">
+            <strong>Jetzt Angebot anfordern!</strong>
+          </a>
+          <a class="button is-light">
+            Kontakt
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</nav>
+
+
+
+  <section class="hero is-primary">
+  <div class="hero-body">
+    <div class="container">
+        <h1 class="title">
+        Ist dein Text fair? Finde es jetzt heraus!
+        </h1>
+            <h2 class="subtitle">
+              Gib deinen Text einfach in das Feld ein oder kopiere Text aus einem Dokument. Wir überprüfen ihn dann auf Gendergerechtigkeit und geben dir Tipps, wie du ihn fairer formulieren kannst.
+            </h2>
+        </div>
+      </div>
+    </section>
+
     <section class="section">
         <div class="container">
-          <h1 class="title">
-            Dein fairer Text.
-          </h1>
+           <p>Mit der Nutzung unserer Webanwendung stimmst du unserer <a href="https://fairlanguage.com/impressum" target="blank">Datenschutzerklärung</a> und der darin beschriebenen Verarbeitung deiner Daten zu.</p>
           <form>
               <div class="textarea" id="editor" contenteditable="true"></div>
           </form>
         </div>
       </section>
+    
       <nav class="panel spelling-popup">
         <p class="panel-heading">Faire Sprache</p>
         <div>
@@ -29,5 +121,13 @@
     <script type="application/javascript" src="js/jquery-3.3.1.min.js"></script>
     <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
     <script type="application/javascript" src="js/app.js"></script>
+
+    <footer class="footer">
+      <div class="content has-text-centered">
+        <p>
+         Die <strong>Fairlanguage Webanwendung</strong> ist ein Angebot von Fairlanguage - Michael Martens, Wiedenkamp 5, 24107 Quarnbek.<br> Infos zum <a href="https://fairlanguage.com/impressum" target="blank">Datenschutz</a> und ein <a href="https://fairlanguage.com/impressum" target="blank">Impressum</a> gibt es hier.
+        </p>
+       </div>
+    </footer>
   </body>
 </html>
