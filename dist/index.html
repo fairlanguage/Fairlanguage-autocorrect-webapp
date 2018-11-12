@@ -1,48 +1,49 @@
 <!DOCTYPE html>
 <html class="has-navbar-fixed-top">
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Fairlanguage Webapp</title>
-    <link rel="icon" type="image/png" href="images/fairlanguage_favicon-32x32.ico">
-    <link media="all" rel="stylesheet" href="css/bulma.css" />
-    <link media="all" rel="stylesheet" href="css/custom.css" />
-    <!-- Chatra {literal} -->
-    <script>
-    (function(d, w, c) {
-        w.ChatraID = 'E6zS9zLLZXB2FGzo7';
-        var s = d.createElement('script');
-        w[c] = w[c] || function() {
-            (w[c].q = w[c].q || []).push(arguments);
-        };
-        s.async = true;
-        s.src = 'https://call.chatra.io/chatra.js';
-        if (d.head) d.head.appendChild(s);
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Fairlanguage Webapp</title>
+  <link rel="icon" type="image/png" href="images/fairlanguage_favicon-32x32.ico">
+  <link media="all" rel="stylesheet" href="css/bulma.css" />
+  <link media="all" rel="stylesheet" href="css/custom.css" />
+  <!-- Chatra {literal} -->
+  <script>
+    (function (d, w, c) {
+      w.ChatraID = 'E6zS9zLLZXB2FGzo7';
+      var s = d.createElement('script');
+      w[c] = w[c] || function () {
+        (w[c].q = w[c].q || []).push(arguments);
+      };
+      s.async = true;
+      s.src = 'https://call.chatra.io/chatra.js';
+      if (d.head) d.head.appendChild(s);
     })(document, window, 'Chatra');
-    </script>
-<!-- /Chatra {/literal} -->
+  </script>
+  <!-- /Chatra {/literal} -->
 
-  </head>
+</head>
 
-  <body>
+<body>
 
   <nav class="navbar is-fixed-top" role="navigation" aria-label="main navigation">
-  <div class="navbar-brand">
-    <a class="navbar-item" href="https://fairlanguage.com">
-      <img src="images/logo_transparent_standard_megaretina.png" height="100">
-    </a>
+    <div class="navbar-brand">
+      <a class="navbar-item" href="https://fairlanguage.com">
+        <img src="images/logo_transparent_standard_megaretina.png" height="100">
+      </a>
 
-    <a role="button" class="navbar-burger burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
-      <span aria-hidden="true"></span>
-      <span aria-hidden="true"></span>
-      <span aria-hidden="true"></span>
-    </a>
-  </div>
+      <a role="button" class="navbar-burger burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
+        <span aria-hidden="true"></span>
+        <span aria-hidden="true"></span>
+        <span aria-hidden="true"></span>
+      </a>
+    </div>
 
-  <div id="navbarBasicExample" class="navbar-menu">
-    <div class="navbar-start">
-      
-     <!-- 
+    <div id="navbarBasicExample" class="navbar-menu">
+      <div class="navbar-start">
+
+        <!--
       <a class="navbar-item">
         Mehr über Fairlanguage erfahren
       </a>
@@ -72,107 +73,118 @@
                 </a>
               </div>
           </div> -->
-    </div>
+      </div>
 
-    <div class="navbar-end">
-      <div class="navbar-item">
-        <div class="buttons">
-          <a class="button is-primary" id="request-modal-opener">
-            <strong>Jetzt Angebot anfordern!</strong>
-          </a>
-          <a class="button is-light" id="contact-modal-opener">
-            Kontakt
-          </a>
+      <div class="navbar-end">
+        <div class="navbar-item">
+          <div class="buttons">
+            <a class="button is-primary" id="request-modal-opener">
+              <strong>Jetzt Angebot anfordern!</strong>
+            </a>
+            <a class="button is-light" id="contact-modal-opener">
+              Kontakt
+            </a>
+          </div>
         </div>
       </div>
     </div>
-  </div>
-</nav>
+  </nav>
 
 
 
   <section class="hero is-primary">
-  <div class="hero-body">
-    <div class="container">
+    <div class="hero-body">
+      <div class="container">
         <h1 class="title">
-        Ist dein Text fair? Finde es jetzt heraus!
+          Ist dein Text fair? Finde es jetzt heraus!
         </h1>
-            <h2 class="subtitle">
-              Gib deinen Text einfach in das Feld ein oder kopiere Text aus einem Dokument. Wir überprüfen ihn dann automatisch auf Gendergerechtigkeit und geben dir Tipps, wie du fairer formulieren kannst.
-            </h2>
-        </div>
+        <h2 class="subtitle">
+          Gib deinen Text einfach in das Feld ein oder kopiere Text aus einem Dokument. Wir überprüfen ihn dann
+          automatisch auf Gendergerechtigkeit und geben dir Tipps, wie du fairer formulieren kannst.
+        </h2>
       </div>
-    </section>
+    </div>
+  </section>
 
-    <section class="section">
-        <div class="container">
-           <p>Mit der Nutzung unserer Webanwendung stimmst du unserer <a href="https://fairlanguage.com/impressum" target="blank">Datenschutzerklärung</a> und der darin beschriebenen Verarbeitung deiner Daten zu.</p>
-          <form>
-              <div class="textarea" id="editor" contenteditable="true"></div>
-          </form>
-        </div>
+  <section class="section">
+    <div class="container">
+      <p>Mit der Nutzung unserer Webanwendung stimmst du unserer <a href="https://fairlanguage.com/impressum" target="blank">Datenschutzerklärung</a>
+        und der darin beschriebenen Verarbeitung deiner Daten zu.</p>
+      <form>
+        <div class="textarea" id="editor" contenteditable="true"></div>
+      </form>
+    </div>
+  </section>
+
+  <nav class="panel spelling-popup">
+    <p class="panel-heading">Faire Sprache</p>
+    <div>
+    </div>
+  </nav>
+
+  <footer class="footer">
+    <div class="content has-text-centered">
+      <p>
+        Die <strong>Fairlanguage Webanwendung</strong> ist ein Angebot von Fairlanguage - Michael Martens, Wiedenkamp
+        5, 24107 Quarnbek.<br> Infos zum <a href="https://fairlanguage.com/impressum" target="blank">Datenschutz</a>
+        und ein <a href="https://fairlanguage.com/impressum" target="blank">Impressum</a> gibt es hier.
+      </p>
+    </div>
+  </footer>
+
+  <div class="modal" id="contact-modal">
+    <div class="modal-background"></div>
+    <div class="modal-card">
+      <header class="modal-card-head">
+        <p class="modal-card-title">Dein Kontakt zu Fairlanguage</p>
+        <button class="delete" aria-label="close"></button>
+      </header>
+      <section class="modal-card-body">
+        <h1>Wir freuen dich auf dich!</h1>
+        <img src="images/fairlanguage_piu.jpg" alt="Foto von Piu">
+        <p>
+          Mail: iwant@fairlanguage.com
+          <br>
+          Telefon: +49 170 53 35 945
+          <br>
+          Social Media: <a href="https://twitter.com/fairlanguage" target="blank">Twitter</a>, <a href="https://facebook.com/fairlanguage"
+            target="blank">Facebook</a>, <a href="https://instagram.com/fairlanguage" target="blank">Instagram</a>, <a
+            href="https://linkedin.com/company/fairlanguage" target="blank">LinkedIn</a>
+      </section>
+      <footer class="modal-card-foot">
+        <button class="button is-primary">Jetzt für den Newsletter anmelden!</button>
+        <!--        <button class="button">Cancel</button> -->
+      </footer>
+    </div>
+  </div>
+
+
+  <div class="modal" id="request-modal">
+    <div class="modal-background"></div>
+    <div class="modal-card">
+      <header class="modal-card-head">
+        <p class="modal-card-title">Deine Anfrage an Fairlanguage</p>
+        <button class="delete" aria-label="close"></button>
+      </header>
+      <section class="modal-card-body">
+
+        <div class="typeform-widget" data-url="https://fairlanguage1.typeform.com/to/ILqSSB" style="width: 100%; height: 500px;"></div>
+        <script> (function () { var qs, js, q, s, d = document, gi = d.getElementById, ce = d.createElement, gt = d.getElementsByTagName, id = "typef_orm", b = "https://embed.typeform.com/"; if (!gi.call(d, id)) { js = ce.call(d, "script"); js.id = id; js.src = b + "embed.js"; q = gt.call(d, "script")[0]; q.parentNode.insertBefore(js, q) } })() </script>
+        <div style="font-family: Sans-Serif;font-size: 12px;color: #999;opacity: 0.5; padding-top: 5px;"> powered by <a
+            href="https://admin.typeform.com/signup?utm_campaign=ILqSSB&utm_source=typeform.com-11887919-Basic&utm_medium=typeform&utm_content=typeform-embedded-poweredbytypeform&utm_term=EN"
+            style="color: #999" target="_blank">Typeform</a> </div>
+
       </section>
 
-      <nav class="panel spelling-popup">
-        <p class="panel-heading">Faire Sprache</p>
-        <div>
-        </div>
-      </nav>
-
-    <footer class="footer">
-      <div class="content has-text-centered">
-        <p>
-         Die <strong>Fairlanguage Webanwendung</strong> ist ein Angebot von Fairlanguage - Michael Martens, Wiedenkamp 5, 24107 Quarnbek.<br> Infos zum <a href="https://fairlanguage.com/impressum" target="blank">Datenschutz</a> und ein <a href="https://fairlanguage.com/impressum" target="blank">Impressum</a> gibt es hier.
-        </p>
-       </div>
-    </footer>
-
-         <div class="modal" id="contact-modal">
-            <div class="modal-background"></div>
-            <div class="modal-card">
-              <header class="modal-card-head">
-                <p class="modal-card-title">Dein Kontakt zu Fairlanguage</p>
-                <button class="delete" aria-label="close"></button>
-              </header>
-              <section class="modal-card-body">
-                <h1>Wir freuen dich auf dich!</h1>
-                <img src="images/fairlanguage_piu.jpg" alt="Foto von Piu">
-                <p>
-                Mail: iwant@fairlanguage.com
-                <br>
-                Telefon: +49 170 53 35 945
-                <br>
-                Social Media: <a href="https://twitter.com/fairlanguage" target="blank">Twitter</a>, <a href="https://facebook.com/fairlanguage" target="blank">Facebook</a>, <a href="https://instagram.com/fairlanguage" target="blank">Instagram</a>, <a href="https://linkedin.com/company/fairlanguage" target="blank">LinkedIn</a>
-               </section>
-                <footer class="modal-card-foot">
-                <button class="button is-primary">Jetzt für den Newsletter anmelden!</button>
-    <!--        <button class="button">Cancel</button> -->
-                 </footer>
-          </div>
-      </div>
-
-
-        <div class="modal" id="request-modal">
-            <div class="modal-background"></div>
-            <div class="modal-card">
-              <header class="modal-card-head">
-                <p class="modal-card-title">Deine Anfrage an Fairlanguage</p>
-                <button class="delete" aria-label="close"></button>
-              </header>
-              <section class="modal-card-body">
-
-                <div class="typeform-widget" data-url="https://fairlanguage1.typeform.com/to/ILqSSB" style="width: 100%; height: 500px;"></div> <script> (function() { var qs,js,q,s,d=document, gi=d.getElementById, ce=d.createElement, gt=d.getElementsByTagName, id="typef_orm", b="https://embed.typeform.com/"; if(!gi.call(d,id)) { js=ce.call(d,"script"); js.id=id; js.src=b+"embed.js"; q=gt.call(d,"script")[0]; q.parentNode.insertBefore(js,q) } })() </script> <div style="font-family: Sans-Serif;font-size: 12px;color: #999;opacity: 0.5; padding-top: 5px;"> powered by <a href="https://admin.typeform.com/signup?utm_campaign=ILqSSB&utm_source=typeform.com-11887919-Basic&utm_medium=typeform&utm_content=typeform-embedded-poweredbytypeform&utm_term=EN" style="color: #999" target="_blank">Typeform</a> </div>
-
-               </section>
-      
-          </div>
-      </div>
+    </div>
+  </div>
 
 
 
 
-    <script type="application/javascript" src="js/jquery-3.3.1.min.js"></script>
-    <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
-    <script type="application/javascript" src="js/app.js"></script>    
-  </body>
+  <script type="application/javascript" src="js/jquery-3.3.1.min.js"></script>
+  <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
+  <script type="application/javascript" src="js/app.js"></script>
+</body>
+
 </html>
