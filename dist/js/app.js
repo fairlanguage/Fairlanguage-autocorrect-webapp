@@ -160,4 +160,19 @@ $(function() {
     }, 500);
   };
 
+  $("#contact-modal-opener").click(function(e){
+    $("#contact-modal").addClass("is-active");
+  });
+
+$(".modal-background, .modal .delete").click(function(e){
+  $(".modal").removeClass("is-active");
+});
+
+
+$(document).keyup(function(e) {
+     if (e.key === "Escape") { 
+      $(".modal").removeClass("is-active");
+    };
+});
+
 });

@@ -78,7 +78,7 @@
           <a class="button is-primary">
             <strong>Jetzt Angebot anfordern!</strong>
           </a>
-          <a class="button is-light">
+          <a class="button is-light" id="contact-modal-opener">
             Kontakt
           </a>
         </div>
@@ -116,9 +116,6 @@
         <div>
         </div>
       </nav>
-    <script type="application/javascript" src="js/jquery-3.3.1.min.js"></script>
-    <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
-    <script type="application/javascript" src="js/app.js"></script>
 
     <footer class="footer">
       <div class="content has-text-centered">
@@ -127,5 +124,33 @@
         </p>
        </div>
     </footer>
+
+         <div class="modal" id="contact-modal">
+          <div class="modal-background"></div>
+          <div class="modal-card">
+              <header class="modal-card-head">
+                <p class="modal-card-title">Dein Kontakt zu Fairlanguage</p>
+                <button class="delete" aria-label="close"></button>
+              </header>
+              <section class="modal-card-body">
+                <h1>Wir freuen dich auf dich!</h1>
+                <img src="images/fairlanguage_piu.jpg" alt="Foto von Piu">
+                <p>
+                Mail: iwant@fairlanguage.com
+                <br>
+                Telefon: +49 170 53 35 945
+                <br>
+                Social Media: <a href="https://twitter.com/fairlanguage" target="blank">Twitter</a>, <a href="https://facebook.com/fairlanguage" target="blank">Facebook</a>, <a href="https://instagram.com/fairlanguage" target="blank">Instagram</a>, <a href="https://linkedin.com/company/fairlanguage" target="blank">LinkedIn</a>
+              </section>
+              <footer class="modal-card-foot">
+          <button class="button is-primary">Jetzt für den Newsletter anmelden!</button>
+          <!--        <button class="button">Cancel</button> -->
+              </footer>
+          </div>
+      </div>
+
+    <script type="application/javascript" src="js/jquery-3.3.1.min.js"></script>
+    <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
+    <script type="application/javascript" src="js/app.js"></script>    
   </body>
 </html>
