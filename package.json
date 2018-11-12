@@ -1,0 +1,24 @@
+{
+  "name": "fairlanguage-autocorrect-webapp",
+  "version": "0.1.0",
+  "description": "",
+  "main": "dist/index.html",
+  "dependencies": {
+  },
+  "devDependencies": {
+  },
+  "scripts": {
+    "lint": "eslint dist/js/app.js",
+    "lint:fix": "eslint dist/js/app.js --fix"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/fairlanguage/Fairlanguage-autocorrect-webapp.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/fairlanguage/Fairlanguage-autocorrect-webapp/issues"
+  },
+  "homepage": "https://github.com/fairlanguage/Fairlanguage-autocorrect-webapp#readme"
+}
