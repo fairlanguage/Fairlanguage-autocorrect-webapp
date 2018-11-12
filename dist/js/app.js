@@ -159,6 +159,10 @@ $(function() {
     }, 500);
   };
 
+  $("#request-modal-opener").click(function(e){
+    $("#request-modal").addClass("is-active");
+  });
+
   $('#contact-modal-opener').click(function(e){
     $('#contact-modal').addClass('is-active');
   });
