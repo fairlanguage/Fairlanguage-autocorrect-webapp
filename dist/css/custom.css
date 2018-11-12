@@ -1,0 +1,20 @@
+.spelling-error {
+  border-bottom: 2px solid #9414e6;
+  cursor: pointer;
+}
+
+.spelling-popup {
+  width: 250px;
+  position: absolute;
+  display: none;
+  background: #fff;
+}
+
+.spelling-popup.is-up {
+  display: block;
+}
+
+
+#editor {
+  height: 50vH
+}
