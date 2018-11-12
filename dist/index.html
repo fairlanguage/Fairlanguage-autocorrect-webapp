@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html class="has-navbar-fixed-top">
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -26,7 +26,7 @@
 
   <body>
 
-  <nav class="navbar" role="navigation" aria-label="main navigation">
+  <nav class="navbar is-fixed-top" role="navigation" aria-label="main navigation">
   <div class="navbar-brand">
     <a class="navbar-item" href="https://fairlanguage.com">
       <img src="images/logo_transparent_standard_megaretina.png" height="100">
@@ -75,7 +75,7 @@
     <div class="navbar-end">
       <div class="navbar-item">
         <div class="buttons">
-          <a class="button is-primary">
+          <a class="button is-primary" id="request-modal-opener">
             <strong>Jetzt Angebot anfordern!</strong>
           </a>
           <a class="button is-light" id="contact-modal-opener">
@@ -96,7 +96,7 @@
         Ist dein Text fair? Finde es jetzt heraus!
         </h1>
             <h2 class="subtitle">
-              Gib deinen Text einfach in das Feld ein oder kopiere Text aus einem Dokument. Wir überprüfen ihn dann auf Gendergerechtigkeit und geben dir Tipps, wie du ihn fairer formulieren kannst.
+              Gib deinen Text einfach in das Feld ein oder kopiere Text aus einem Dokument. Wir überprüfen ihn dann automatisch auf Gendergerechtigkeit und geben dir Tipps, wie du fairer formulieren kannst.
             </h2>
         </div>
       </div>
@@ -126,8 +126,8 @@
     </footer>
 
          <div class="modal" id="contact-modal">
-          <div class="modal-background"></div>
-          <div class="modal-card">
+            <div class="modal-background"></div>
+            <div class="modal-card">
               <header class="modal-card-head">
                 <p class="modal-card-title">Dein Kontakt zu Fairlanguage</p>
                 <button class="delete" aria-label="close"></button>
@@ -141,13 +141,33 @@
                 Telefon: +49 170 53 35 945
                 <br>
                 Social Media: <a href="https://twitter.com/fairlanguage" target="blank">Twitter</a>, <a href="https://facebook.com/fairlanguage" target="blank">Facebook</a>, <a href="https://instagram.com/fairlanguage" target="blank">Instagram</a>, <a href="https://linkedin.com/company/fairlanguage" target="blank">LinkedIn</a>
-              </section>
-              <footer class="modal-card-foot">
-          <button class="button is-primary">Jetzt für den Newsletter anmelden!</button>
-          <!--        <button class="button">Cancel</button> -->
-              </footer>
+               </section>
+                <footer class="modal-card-foot">
+                <button class="button is-primary">Jetzt für den Newsletter anmelden!</button>
+    <!--        <button class="button">Cancel</button> -->
+                 </footer>
           </div>
       </div>
+
+
+        <div class="modal" id="request-modal">
+            <div class="modal-background"></div>
+            <div class="modal-card">
+              <header class="modal-card-head">
+                <p class="modal-card-title">Deine Anfrage an Fairlanguage</p>
+                <button class="delete" aria-label="close"></button>
+              </header>
+              <section class="modal-card-body">
+
+                <div class="typeform-widget" data-url="https://fairlanguage1.typeform.com/to/ILqSSB" style="width: 100%; height: 500px;"></div> <script> (function() { var qs,js,q,s,d=document, gi=d.getElementById, ce=d.createElement, gt=d.getElementsByTagName, id="typef_orm", b="https://embed.typeform.com/"; if(!gi.call(d,id)) { js=ce.call(d,"script"); js.id=id; js.src=b+"embed.js"; q=gt.call(d,"script")[0]; q.parentNode.insertBefore(js,q) } })() </script> <div style="font-family: Sans-Serif;font-size: 12px;color: #999;opacity: 0.5; padding-top: 5px;"> powered by <a href="https://admin.typeform.com/signup?utm_campaign=ILqSSB&utm_source=typeform.com-11887919-Basic&utm_medium=typeform&utm_content=typeform-embedded-poweredbytypeform&utm_term=EN" style="color: #999" target="_blank">Typeform</a> </div>
+
+               </section>
+      
+          </div>
+      </div>
+
+
+
 
     <script type="application/javascript" src="js/jquery-3.3.1.min.js"></script>
     <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
