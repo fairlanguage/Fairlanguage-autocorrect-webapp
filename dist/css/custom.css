@@ -14,7 +14,19 @@
   display: block;
 }
 
+.hero.is-primary {
+  background: #7d2eea; /* Old browsers */
+  background: -moz-linear-gradient(top, #7d2eea 0%, #a26eea 100%); /* FF3.6-15 */
+  background: -webkit-linear-gradient(top, #7d2eea 0%,#a26eea 100%); /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to bottom, #7d2eea 0%,#a26eea 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#7d2eea', endColorstr='#a26eea',GradientType=0 ); /* IE6-9 */
+}
+
+
+.button.is-primary {
+  background-color: #25dbe3;
+}
 
 #editor {
-  height: 50vH
+  height: 40vH
 }
