@@ -30,14 +30,9 @@
   <nav class="navbar is-fixed-top" role="navigation" aria-label="main navigation">
     <div class="navbar-brand">
       <a class="navbar-item" href="https://fairlanguage.com">
-        <img src="images/logo_transparent_standard_megaretina.png" height="100">
+        <img src="images/fairlanguage_mini-logo-webapp.png" height="100">
       </a>
-        <a class="navbar-item is-hidden-desktop" href="https://github.com/fairlanguage/Fairlanguage-autocorrect-webapp" target="_blank" rel="noreferrer" title="GitHub Repository">
-          <span class="icon">
-            <img src="images/GitHub-Mark-32px.png" />
-          </span>
-        </a>
-
+       
       <a role="button" class="navbar-burger burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
         <span aria-hidden="true"></span>
         <span aria-hidden="true"></span>
@@ -81,19 +76,25 @@
       </div>
 
       <div class="navbar-end">
-        <a class="navbar-item is-hidden-touch is-hidden-desktop-only" href="https://github.com/fairlanguage/Fairlanguage-autocorrect-webapp" target="_blank" rel="noreferrer" title="GitHub Repository">
+      
+        <div class="navbar-item">
+          <div class="buttons">
+
+          <a class="button is-primary" id="request-modal-opener">
+              <strong>Jetzt Angebot anfordern!</strong>
+            </a>
+           <a class="button" href="https://us16.list-manage.com/subscribe?u=3aaa054028ef38e34924b620c&id=9a25ebd444" target="blank">Newsletter
+          </a>
+            
+            <a class="button is-light" id="contact-modal-opener">
+              Kontakt
+            </a>
+             <a class="navbar-item" href="https://github.com/fairlanguage/Fairlanguage-autocorrect-webapp" target="_blank" rel="noreferrer" title="GitHub Repository">
           <span class="icon">
             <img src="images/GitHub-Mark-32px.png" />
           </span>
         </a>
-        <div class="navbar-item">
-          <div class="buttons">
-            <a class="button is-primary" id="request-modal-opener">
-              <strong>Jetzt Angebot anfordern!</strong>
-            </a>
-            <a class="button is-light" id="contact-modal-opener">
-              Kontakt
-            </a>
+
           </div>
         </div>
       </div>
@@ -109,7 +110,7 @@
           Ist dein Text fair? Finde es jetzt heraus!
         </h1>
         <h2 class="subtitle">
-          Gib deinen Text einfach in das Feld ein oder kopiere Text aus einem Dokument. Wir überprüfen ihn dann
+          Gib deinen Text einfach in das Feld ein oder kopiere ihn Text aus einem Dokument. Wir überprüfen deine Eingabe dann
           automatisch auf Gendergerechtigkeit und geben dir Tipps, wie du fairer formulieren kannst.
         </h2>
       </div>
@@ -118,8 +119,9 @@
 
   <section class="section">
     <div class="container">
-      <p>Mit der Nutzung unserer Webanwendung stimmst du unserer <a href="https://fairlanguage.com/impressum" target="blank">Datenschutzerklärung</a>
-        und der darin beschriebenen Verarbeitung deiner Daten zu.</p>
+      <p>
+Mit der Nutzung unserer Webanwendung stimmst du unserer <a href="https://fairlanguage.com/impressum" target="blank">Datenschutzerklärung</a>
+        und der Verarbeitung deiner Daten zu.</p>
       <form>
         <div class="textarea" id="editor" contenteditable="true"></div>
       </form>
@@ -150,19 +152,28 @@
         <button class="delete" aria-label="close"></button>
       </header>
       <section class="modal-card-body">
-        <h1>Wir freuen dich auf dich!</h1>
-        <img src="images/fairlanguage_piu.jpg" alt="Foto von Piu">
-        <p>
-          Mail: iwant@fairlanguage.com
+        <h1>So sind wir am besten zu erreichen:</h1>        
           <br>
-          Telefon: +49 170 53 35 945
+          Für Aufträge und geschäftliche Anfragen: <a href="mailto:agnes@fairlanguage.com">agnes@fairlanguage.com</a>
           <br>
-          Social Media: <a href="https://twitter.com/fairlanguage" target="blank">Twitter</a>, <a href="https://facebook.com/fairlanguage"
+          Bei Bewerbungen: <a href="https://fairlanguage1.typeform.com/to/NTKds1" target="blank">Hier lang :)</a>        
+          <br>
+          Für allgemeine Anfragen: <a href="mailto:iwant@fairlanguage.com">iwant@fairlanguage.com</a>
+          <br>
+          <br>
+          Telefon: <a href="tel:+491705335945">+49 170 53 35 945</a>
+          <br>
+          <br>
+          Und ansonsten erreicht ihr uns auch gut über folgende Kanäle:
+          <br>
+          <a href="https://twitter.com/fairlanguage" target="blank">Twitter</a>, <a href="https://facebook.com/fairlanguage"
             target="blank">Facebook</a>, <a href="https://instagram.com/fairlanguage" target="blank">Instagram</a>, <a
             href="https://linkedin.com/company/fairlanguage" target="blank">LinkedIn</a>
       </section>
       <footer class="modal-card-foot">
-        <button class="button is-primary">Jetzt für den Newsletter anmelden!</button>
+        <a class="button is-primary" href="https://us16.list-manage.com/subscribe?u=3aaa054028ef38e34924b620c&id=9a25ebd444" target="blank">Jetzt für den Newsletter anmelden!
+        </a>
+        </button>
         <!--        <button class="button">Cancel</button> -->
       </footer>
     </div>
