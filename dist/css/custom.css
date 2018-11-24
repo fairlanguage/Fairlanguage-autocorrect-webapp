@@ -28,5 +28,6 @@
 }
 
 #editor {
-  height: 40vH
+  height: 40vH;
+  overflow: auto;
 }
