@@ -123,7 +123,7 @@ $(function() {
     spellingPopup.removeClass('is-up');
   });
 
-  var host = 'https://fairlanguage3.dev-star.de/';
+  var host = 'https://fairlanguage-api-dev.dev-star.de/';
   var checkUrl = host + 'checkDocument';
 
   var tArea = $('#editor');
@@ -159,6 +159,12 @@ $(function() {
     }, 500);
   };
 
+// Displays elements that should only be displayed in Chrome
+  if (chrome){
+    console.log('true');
+    $('.is-chrome').removeClass('is-hidden');
+  };                 
+  
   $('#request-modal-opener').click(function(e){
     $('#request-modal').addClass('is-active');
   });
