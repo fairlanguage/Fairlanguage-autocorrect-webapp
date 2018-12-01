@@ -161,7 +161,6 @@ $(function() {
 
 // Displays elements that should only be displayed in Chrome
   if (chrome){
-    console.log('true');
     $('.is-chrome').removeClass('is-hidden');
   };                 
   
