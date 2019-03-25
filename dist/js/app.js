@@ -158,12 +158,13 @@ $(function() {
       }
     }, 500);
   };
-
+    
 // Displays elements that should only be displayed in Chrome
-  if (chrome){
+  if (typeof chrome !== 'undefined' && chrome){
     $('.is-chrome').removeClass('is-hidden');
-  };                 
-  
+  }; 
+                
+  //stuff for modal to open / close
   $('#request-modal-opener').click(function(e){
     $('#request-modal').addClass('is-active');
   });
@@ -196,3 +197,6 @@ $(function() {
   });
 
 });
+
+
+
