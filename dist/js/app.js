@@ -137,6 +137,7 @@ $(function() {
     clearTimeout(timeout);
 
     timeout = setTimeout(function () {
+      var oldText = tArea.text();
       var text = divToBr(tArea);
       if (text.length > 0) {
         var sel = saveSelection(tArea[0]);
@@ -152,18 +153,22 @@ $(function() {
             start = r.position + r.string.length;
           }
           newText += text.substr(start);
-          tArea.html(brToDiv(newText));
-          restoreSelection(tArea[0], sel);
+
+          var updatedText = tArea.text();
+          if(updatedText === oldText) {
+            tArea.html(brToDiv(newText));
+            restoreSelection(tArea[0], sel);
+          }
         });
       }
     }, 500);
   };
-    
-// Displays elements that should only be displayed in Chrome
+
+  // Displays elements that should only be displayed in Chrome
   if (typeof chrome !== 'undefined' && chrome){
     $('.is-chrome').removeClass('is-hidden');
-  }; 
-                
+  };
+
   //stuff for modal to open / close
   $('#request-modal-opener').click(function(e){
     $('#request-modal').addClass('is-active');
