@@ -123,7 +123,7 @@ $(function() {
     spellingPopup.removeClass('is-up');
   });
 
-  var host = 'https://fairlanguage-api-dev.dev-star.de/';
+  var host = 'https://api.fairlanguage.com/';
   var checkUrl = host + 'checkDocument';
 
   var tArea = $('#editor');
